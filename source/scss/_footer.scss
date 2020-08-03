@@ -1,0 +1,70 @@
+.footer {
+	padding: 20px 0;
+	background: $col-2;
+	font-family: $ff_main;
+	font-weight: $fw_other;
+	color: $col-1;
+}
+.footer-box {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-contacts {
+	margin: 0 20px 0 0;
+	&__text {margin: 10px 0;}
+	&__networks-box {
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		width: 250px;
+		padding: 10px 0;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: $col-1;
+		}
+		&::before {top: 0;}
+		&::after {bottom: 0;}
+	}
+	&__networks {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+}
+.footer-contacts-networks {
+	&__link {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	font-size: 10px;
+	text-align: right;
+}
+@media screen and (max-width: 500px) {
+	.footer-contacts {
+		&__networks-box {width: 160px;}
+		&__networks {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.footer-contacts-networks__img {
+		width: 15px;
+		height: 15px;
+	}
+}

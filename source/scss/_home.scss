@@ -1,0 +1,122 @@
+.home {
+	background: #bbb url('../img/bg-3.jpg') center/cover fixed no-repeat;
+	box-sizing: border-box;
+}
+.home-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 40px 0;
+	height: 100vh;
+}
+.home-greeting {
+	margin: 150px;
+	color: $col-1;
+	z-index: 10;
+	white-space: nowrap;
+	&__subtitle {
+		font-size: $fz_subtitle;
+		text-align: center;
+	}
+	&__name {
+		margin: 20px 0;
+		padding: 0;
+		font-size: 100px;
+		border-radius: 10px;
+		background:rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 20px #000;
+		color: $col-1;
+	}
+	&__h1 {
+		text-align: center;
+		font-size: $fz_min;
+	}
+}
+.r {animation: red 0.5s ease 1 normal 0.5s;}
+.o {animation: orange 0.5s ease 1 normal 1s;}
+.y {animation: yellow 0.5s ease 1 normal 1.5s;}
+.g {animation: green 0.5s ease 1 normal 2s;}
+.b {animation: blue 0.5s ease 1 normal 2.5s;}
+.db {animation: dark-blue 0.5s ease 1 normal 3s;}
+.v {animation: violet 0.5s ease 1 normal 3.5s;}
+.meow {
+	display: none;
+	color: $col-11;
+}
+.home-scrollDown {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 50px 0;
+	padding: 15px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	animation: arrow-down 1s ease-in-out infinite alternate 0s;
+	&:hover {animation-play-state: paused;}
+	&__img {}
+}
+@keyframes red {
+	0% {color: $col-1;}
+	100% {color: $col-4;}
+}
+@keyframes orange {
+	0% {color: $col-1;}
+	100% {color: $col-5;}
+}
+@keyframes yellow {
+	0% {color: $col-1;}
+	100% {color: $col-6;}
+}
+@keyframes green {
+	0% {color: $col-1;}
+	100% {color: $col-7;}
+}
+@keyframes blue {
+	0% {color: $col-1;}
+	100% {color: $col-8;}
+}
+@keyframes dark-blue {
+	0% {color: $col-1;}
+	100% {color: $col-9;}
+}
+@keyframes violet {
+	0% {color: $col-1;}
+	100% {color: $col-10;}
+}
+@keyframes arrow-down {
+	0% {bottom: 100px;}
+	100% {bottom: 50px;}
+}
+@media screen and (max-width: 1000px) {
+	.home-greeting {
+		&__subtitle {font-size: $fz_main;}
+		&__name {font-size: 70px;}
+	}
+	.home-scrollDown {
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	}
+	@keyframes arrow-down {
+		0% {bottom: 180px;}
+		100% {bottom: 140px;}
+	}
+}
+@media screen and (max-width: 719px) {
+	.home-greeting {margin: 0;}
+	.home-scrollDown {animation: none;}
+}
+@media screen and (max-width: 424px) {
+	.home-greeting {
+		&__subtitle {font-size: 14px;}
+		&__name {font-size: 80px;}
+	}
+}
+@media screen and (max-width: 374px) {
+	.home-greeting {
+		&__subtitle {font-size: 14px;}
+		&__name {font-size: 60px;}
+	}
+}

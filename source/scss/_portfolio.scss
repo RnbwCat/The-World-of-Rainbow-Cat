@@ -1,0 +1,81 @@
+.portfolio {
+	padding: 50px 0;
+	border-bottom: 2px solid $col-3;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.portfolio-title {}
+.portfolio-card {
+	max-width: 250px;
+	margin: 30px;
+	padding: 5px;
+	border: 1px solid $col-2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px $col-2;
+	box-sizing: border-box;
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.3s;
+	}
+	&__img-container {
+		width: 100%;
+		height: 240px;
+		margin: 0 auto;
+		border: 1px solid $col-2;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		object-fit: cover;
+	}
+	&__body {padding: 0.1px 20px;}
+	&__title {
+		margin: 10px 0;
+		font-family: $ff_subtitle-other;
+		font-size: $fz_subtitle;
+		text-align: right;
+	}
+	&__description {font-size: $fz_min;}
+	&__more {
+		margin: 10px 20px;
+		max-width: 100px;
+		max-height: 35px;
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		color: $col-11;
+	}
+}
+@media screen and (max-width: 769px) {
+	.portfolio-card {
+		max-width: 200px;
+		&__img-container {height: 180px;}
+	}
+}
+@media screen and (max-width: 600px) {
+	.portfolio-box {display: block;}
+	.portfolio-card {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 100%;
+		margin: 20px;
+		&__img-container {display: none;}
+		&__body {padding: 0 10px;}
+		&__title {font-size: 25px;}
+		&__more {max-width: 80px;}
+	}
+}
+@media screen and (max-width: 376px) {
+	.portfolio-card {
+		&__title {font-size: $fz_main;}
+		&__more {max-width: 80px;}
+	}
+}

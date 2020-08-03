@@ -1,0 +1,96 @@
+//=== Подключение шрифтов ===
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@400;700&family=Nunito&display=swap');
+//=== /Подключение шрифтов ===
+
+// === Переменные ===
+$ff_main: 'Nunito', 'Arial', sans-serif;
+$ff_title: 'Amatic SC', 'Arial', cursive;
+$ff_subtitle-other: 'Caveat', 'Arial', cursive;
+
+$fz_main: 18px;
+$fz_title: 40px;
+$fz_subtitle: 20px;
+$fz_min: 14px;
+
+$fw_title: 700;
+$fw_subtitle: 700;
+$fw_other: 400;
+
+$col-1: #ffffff;
+$col-2: #062936;
+$col-3: #114154;
+$col-4: #891111;
+$col-5: #BC7F26;
+$col-6: #BCBA26;
+$col-7: #1E9426;
+$col-8: #1B6175;
+$col-9: #283481;
+$col-10: #53217F;
+$col-11: #FCB8B8;
+
+//=== /Переменные ===
+
+//=== Основные стили ===
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: 0;
+	box-sizing: border-box;
+	font-family: $ff_main;
+	font-size: $fz_main;
+}
+ul {padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 20px;
+}
+.title {
+	padding: 30px 0;
+	font-family: $ff_title;
+	font-weight: $fw_title;
+	font-size: $fz_title;
+	text-transform: uppercase;
+	text-align: center;
+	color: $col-2;
+}
+.btn {
+	width: 150px;
+	height: 50px;
+	margin: 10px;
+	background: $col-3;
+	border-radius: 10px;
+	border: none;
+	border-bottom: 5px solid $col-2;
+	color: $col-11;
+	font-family: $ff_subtitle-other;
+	font-size: $fz_subtitle;
+	&:active {border-bottom: none;}
+}
+.btn-to-scroll {display: none;}
+//=== /Основные стили ===
+
+
+
+//=== Панель навигации ===
+@import '_nav.scss';
+//=== /Панель навигации ===
+
+//=== Основной контент ===
+@import '_home.scss';
+@import '_about.scss';
+@import '_portfolio.scss';
+@import '_product.scss';
+@import '_contacts.scss';
+@import '_reviews.scss';
+@import '_catalog.scss';
+@import '_up.scss';
+//=== /Основной контент ===
+
+//=== Подвал ===
+@import '_footer.scss';
+//=== /Подвал ===
