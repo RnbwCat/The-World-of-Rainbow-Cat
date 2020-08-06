@@ -1,11 +1,13 @@
 //=== Подключение шрифтов ===
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@400;700&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 //=== /Подключение шрифтов ===
 
 // === Переменные ===
 $ff_main: 'Nunito', 'Arial', sans-serif;
 $ff_title: 'Amatic SC', 'Arial', cursive;
 $ff_subtitle-other: 'Caveat', 'Arial', cursive;
+$ff_menu-btn: 'Raleway', 'Arial', sans-serif;
 
 $fz_main: 18px;
 $fz_title: 40px;
@@ -67,7 +69,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0;}
 	border: none;
 	border-bottom: 5px solid $col-2;
 	color: $col-11;
-	font-family: $ff_subtitle-other;
+	font-family: $ff_menu-btn;
 	font-size: $fz_subtitle;
 	&:active {border-bottom: none;}
 }

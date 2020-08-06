@@ -25,7 +25,7 @@
 	}
 	&__logo {
 		width: 60px;
-		// height: 60px;
+		height: 60px;
 		z-index: 5;}
 	&__img {
 		width: 100%;
@@ -44,7 +44,7 @@
 		display: inline-block;
 		padding: 5px;
 		font-family: $ff_subtitle-other;
-		font-size: $fz_subtitle;
+		font-size: $ff_menu-btn;
 		color: $col-1;
 	}
 }
