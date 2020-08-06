@@ -7,7 +7,6 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.portfolio-title {}
 .portfolio-card {
 	max-width: 250px;
 	margin: 30px;
@@ -70,12 +69,10 @@
 		&__img-container {display: none;}
 		&__body {padding: 0 10px;}
 		&__title {font-size: 25px;}
-		&__more {max-width: 80px;}
 	}
 }
 @media screen and (max-width: 376px) {
 	.portfolio-card {
 		&__title {font-size: $fz_main;}
-		&__more {max-width: 80px;}
 	}
 }
