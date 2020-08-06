@@ -25,7 +25,7 @@
 	}
 	&__logo {
 		width: 60px;
-		height: 60px;
+		// height: 60px;
 		z-index: 5;}
 	&__img {
 		width: 100%;
@@ -43,8 +43,8 @@
 	&__link {
 		display: inline-block;
 		padding: 5px;
-		font-family: $ff_subtitle-other;
-		font-size: $ff_menu-btn;
+		font-family: $ff_menu-btn;
+		font-size: $fz_subtitle;
 		color: $col-1;
 	}
 }
@@ -57,7 +57,6 @@
 	body.lock {overflow: hidden;}
 	.active {box-shadow: 0 0 10px $col-3;}
 	.nav {
-		// &__box {padding: 10px 0;}
 		&__list {
 			position: fixed;
 			flex-direction: column;
