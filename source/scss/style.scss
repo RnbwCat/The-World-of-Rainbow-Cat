@@ -32,11 +32,15 @@ $col-11: #FCB8B8;
 //=== /Переменные ===
 
 //=== Основные стили ===
+html {
+	height: 100%;
+}
 body {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	position: 0;
 	box-sizing: border-box;
 	font-family: $ff_main;
 	font-size: $fz_main;
@@ -45,6 +49,9 @@ ul {padding: 0;}
 li {list-style: none;}
 a {text-decoration: none;}
 p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+.content {
+	flex: 1 0 auto;
+}
 .container {
 	margin: 0 auto;
 	max-width: 1200px;

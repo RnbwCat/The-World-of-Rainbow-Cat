@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Nunito&family=Raleway:wght@500&display=swap");
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
-  position: 0;
   box-sizing: border-box;
   font-family: "Nunito", "Arial", sans-serif;
   font-size: 18px;
@@ -23,6 +28,10 @@ a {
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -113,7 +122,8 @@ p, h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 5px;
   font-family: "Raleway", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -845,7 +855,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .contacts {
-  padding: 50px 0;
+  padding: 90px 0;
   background: #bbb url("../img/bg-2.jpg") center/cover fixed no-repeat;
 }
 
@@ -1089,6 +1099,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .footer {
+  flex: 0 0 auto;
   padding: 20px 0;
   background: #062936;
   font-family: "Nunito", "Arial", sans-serif;
